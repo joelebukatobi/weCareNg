@@ -1,0 +1,108 @@
+/*
+  Color Variables
+  ---------------
+*/
+$color-primary: #11935b;
+$color-secondary: #069fdd;
+$color-grey: #dadada;
+$color-white: #ffffff;
+$color-black: #000000;
+/*
+  Font Variables
+  --------------
+*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@font-face {
+  font-family: myFirstFont;
+  src: url('../fonts/Gotham Rounded.otf');
+}
+
+$font-primary: 'Gotham Rounded', sans-serif;
+$font-secondary: 'PT Serif', serif;
+/* 
+  Mixins 
+  ------
+*/
+
+/*
+  Mobile Responsiveness
+  ---------------------
+*/
+
+/*
+  Main
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+}
+
+a:link,
+a:visited a:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+input:link,
+input:hover,
+input:focus,
+input:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+input::placeholder {
+  font-family: $font-primary;
+}
+
+textarea::placeholder {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+}
+
+button:link,
+button:hover,
+button:focus,
+button:active {
+  outline: none;
+  background-color: tranparent;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //10px/16px = 62.5% 1rem
+  @media all and (max-width: 480px) {
+    font-size: 45%;
+  }
+
+  @media all and (min-width: 480px) and (max-width: 576px) {
+    font-size: 55%;
+  }
+
+  @media all and (min-width: 1024px) and (max-width: 1440px) {
+    font-size: 45%;
+  }
+
+  @media all and (min-width: 1440px) and (max-width: 1600px) {
+    font-size: 52.5%;
+  }
+
+  @media (min-width: 1920px) {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+}

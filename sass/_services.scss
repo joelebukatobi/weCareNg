@@ -1,0 +1,104 @@
+.services-page {
+  & .heading-text {
+    margin-bottom: 4.8rem;
+  }
+  &__row {
+    margin-bottom: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    &__card {
+      width: 48%;
+      display: flex;
+      justify-content: space-between;
+      height: 25.6rem;
+      &__image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 43%;
+        &__picture {
+          position: absolute;
+          z-index: -1;
+          // width
+          width: 100%;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+          &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            content: '';
+            background: rgba(16, 29, 64, 0.7);
+          }
+        }
+        &__icon {
+          display: flex;
+          justify-content: center;
+          width: inherit;
+          & svg {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+      }
+      &__text {
+        width: 53%;
+        & .heading {
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    & .heading-text {
+      text-align: justify;
+    }
+    &__row {
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-bottom: 0;
+      &__card {
+        width: 100%;
+        flex-direction: column-reverse;
+        height: unset;
+        margin-bottom: 8rem;
+        &__image {
+          width: 100%;
+          height: 50rem;
+          &__picture {
+            width: 100%;
+            height: 100%;
+            & img {
+              width: 100%;
+              height: 100%;
+            }
+            ::after {
+              background: rgba(16, 29, 64, 0.1);
+            }
+          }
+          &__icon {
+            & svg {
+              height: 16rem;
+              width: 16rem;
+            }
+          }
+        }
+        &__text {
+          width: 100%;
+          margin-bottom: 3.2rem;
+          & .heading {
+            align-items: center;
+          }
+          & .paragraph {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
