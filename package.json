@@ -1,5 +1,5 @@
 {
-  "name": "weCareNg",
+  "name": "WeCare-Ng",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -16,6 +16,7 @@
   "keywords": [],
   "author": "JetDev",
   "license": "ISC",
+  "homepage": "https://joelebukatobi.github.io/WeCare-Ng",
   "devDependencies": {
     "auto-prefixer": "^0.4.2",
     "node-sass": "^5.0.0",

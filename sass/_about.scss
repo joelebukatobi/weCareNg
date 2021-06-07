@@ -93,7 +93,7 @@
     justify-content: space-between;
     &__image {
       width: 50%;
-      height: 52rem;
+      height: 50rem;
       & img {
         width: 100%;
         height: 100%;
@@ -123,6 +123,7 @@
       flex-direction: column;
       &__image {
         width: 100%;
+        height: 45rem;
         margin-bottom: 2.4rem;
       }
       &__text {
@@ -181,7 +182,7 @@
       &__section {
         flex-direction: column;
         &__image {
-          height: 50rem;
+          height: 55rem;
           margin-bottom: 2.4rem;
         }
         &__content {
@@ -197,6 +198,49 @@
       }
       & .section-two {
         flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.4rem;
+  & > * {
+    margin-bottom: 6.4rem;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    &__section {
+      width: 30.5%;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+      &__image {
+        width: 100%;
+        height: 42rem;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.6rem 1.6rem 2.4rem 1.6rem;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 576px) {
+    &__row {
+      flex-direction: column;
+      &__section {
+        width: 100%;
+        margin-bottom: 5.6rem;
+        &__image {
+          height: 56rem;
+        }
       }
     }
   }
