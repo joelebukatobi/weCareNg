@@ -3,6 +3,9 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
  <link rel="stylesheet" href="css/style.css">
  <title>WeCare-Ng</title>
  <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
@@ -72,78 +75,46 @@
 
 </div>
 
-
 <!-- Header -->
-<div class="head">
- <div class="head__bg">
-  <img class="head__bg__image" src="images/location-header.png" alt="">
+<div class="contact">
+ <div class="contact__bg">
+  <img class="contact__bg__image" src="images/header-image.jpg" alt="">
  </div>
-
- <div class="head__content">
-  <div class="container">
-   <h3 class="heading-3"><a href="index.html">Home</a> / <a href="location.html">Locations</a></h3>
-  </div>
- </div>
-</div>
-
-<div class="container">
- <div class="behaviour">
-  <div class="behaviour__image">
-   <img src="images/engagement-image.jpg" alt="">
-  </div>
-  <div class="behaviour__text">
-   <div class="heading">
-    <h3 class="heading-3">Community Engagement</h3>
+ <div class="contact__content">
+  <div class="contact__content__text">
+   <div class="caption">
+    <p class="paragraph">Contact Us</p>
     <hr class="separator">
+    <h2 class="heading-1">Hello, <br>Let's Get In Touch</h2>
    </div>
-   <p class="paragraph">
-    We are proud to support our community through various programs that embody the WeCare-Ng core values of doing what is right and providing value and service. We strongly believe in giving back to the community, which has supported us. Through our philanthropy and volunteerism, we are committed to doing our part to help build viable communities, where our patients and employees live and work. Therefore, we support programs and organizations that help make our communities and estates a better, stronger and healthier place to call home.
-   </p>
-  </div>
- </div>
-</div>
-
-<!-- Our Value -->
-<div class="container">
- <div class="value">
-  <div class="value__content">
-
-   <div class="value__content__image">
-    <img src="images/location-image.png" alt="">
+   <div class="contact__content__text__group">
+    <p class="heading-4">info@wecare.ng</p>
+    <p class="heading-4">+234 800 000 0000</p>
    </div>
-   <div class="value__content__text">
-    <div class="heading">
-     <h3 class="heading-3">We are located in Western Nigeria, with additional medical pavilion planned in the following locations:
-     </h3>
-     <hr class="separator">
-    </div>
-    <ul class="value__content__text__lists">
-     <li class="value__content__text__lists__item">
-      <span>WeCare-Ng, Isheri </span>- Isheri Medical pavilion building foundation in-progress
-     </li><br>
-     <li class="value__content__text__lists__item">
-      <span>WeCare-Ng, Shimawa </span>- Shimawa Land acquired and allocated
-     </li><br>
-     <li class="value__content__text__lists__item">
-      <span>WeCare-Ng, Epe</span> - Epe Land sources in-progress
-     </li><br>
-     <li class="value__content__text__lists__item">
-      <span>WeCare-Ng, Lekki-Dangota Axis</span> - Land acquired
-     </li><br>
-     <li class="value__content__text__lists__item">
-      <span>WeCare-Ng, Lekki</span> - Land acquired
-     </li><br>
-     <li class="value__content__text__lists__item">
-      <span>WeCare-Ng, AgoIwoye</span> - Ago-Iwoye Land acquired and fenced
-     </li>
-    </ul>
+   <div class="social-media">
+    <a href="https://twitter.com/_wecareng_?s=08">
+     <svg>
+      <use href="images/sprite.svg#icon-tw"></use>
+     </svg>
+    </a>
+    <a href="https://instagram.com/_wecareng_?utm_medium=copy_link">
+     <svg>
+      <use href="images/sprite.svg#icon-in"></use>
+     </svg>
+    </a>
    </div>
   </div>
+  <form class="contact__content__form">
+   <input class="input" type="text" placeholder="John Doe">
+   <input class="input" type="email" placeholder="mail@example.com">
+   <textarea class="textarea" name="message" id="message" cols="30" rows="10" placeholder="Hi there, I'm..."></textarea>
+   <button class="btn">Send Message</button>
+  </form>
  </div>
 </div>
 
 <!-- Footer -->
-<div class="footer">
+<div class="footer footer-contact">
  <div class="container">
   <div class="footer__top">
    <div class="footer__top__column">
@@ -188,8 +159,10 @@
  </div>
 </div>
 
-
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script src="js/index.js"></script>
 
 </html>
