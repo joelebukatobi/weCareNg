@@ -142,18 +142,18 @@
 .leaders {
   display: flex;
   flex-direction: column;
-  margin: 4.8rem 0;
+  margin-top: -4.8rem;
+  padding: 4.8rem 0;
   & .heading {
     margin-bottom: 4rem;
   }
   &__row {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    // margin-bottom: 4rem;
     &__section {
       display: flex;
       justify-content: space-between;
-
       &__image {
         width: 30%;
         height: 40rem;
@@ -179,6 +179,7 @@
   }
   @media (min-width: 320px) and (max-width: 576px) {
     &__row {
+      margin-bottom: 4rem;
       &__section {
         flex-direction: column;
         &__image {
