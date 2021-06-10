@@ -991,6 +991,52 @@ body {
         .behaviour__text .paragraph {
           text-align: justify; } }
 
+.location {
+  margin-bottom: 7.2rem; }
+  .location__content {
+    display: flex;
+    justify-content: space-between; }
+    .location__content__map {
+      width: 50%;
+      height: 48rem; }
+      .location__content__map .mapouter {
+        position: relative;
+        text-align: right;
+        width: 100%;
+        height: 100%; }
+      .location__content__map .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 100%;
+        width: 100%; }
+        .location__content__map .gmap_canvas #gmap_canvas {
+          height: 100%;
+          width: 100%; }
+    .location__content__text {
+      width: 48%; }
+      .location__content__text .heading {
+        align-items: flex-start;
+        margin-bottom: 1.6rem; }
+      .location__content__text__lists {
+        padding-left: 3.2rem; }
+        .location__content__text__lists__item {
+          font-size: 1.6rem;
+          font-weight: 300; }
+          .location__content__text__lists__item span {
+            color: #11935b; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .location__content {
+      flex-direction: column-reverse; }
+      .location__content__map {
+        width: 100%;
+        height: 45rem; }
+      .location__content__text {
+        width: 100%;
+        margin-bottom: 2.4rem; }
+        .location__content__text__lists__item {
+          font-size: 2rem;
+          width: 100%; } }
+
 .contact {
   position: relative;
   top: -9.6vh;
