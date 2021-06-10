@@ -256,7 +256,7 @@ body {
           font-weight: 300; }
           .navbar__nav__list__item__link:hover {
             padding-bottom: 0.8rem;
-            border-bottom: 0.2rem solid #069fdd; }
+            border-bottom: 0.2rem solid #11935b; }
   @media (min-width: 320px) and (max-width: 576px) {
     .navbar {
       display: block;
@@ -560,7 +560,7 @@ body {
 .banner {
   margin: 4.8rem 0;
   width: 100%;
-  height: 68rem;
+  height: 60rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -672,10 +672,11 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1; }
+    z-index: -1;
+    overflow: hidden; }
     .head__bg__image {
       width: 100%;
-      height: 100%;
+      height: 140%;
       background-position: top; }
     .head__bg::after {
       position: absolute;
@@ -701,6 +702,7 @@ body {
       overflow: hidden; }
       .head__bg__image {
         width: 350%;
+        height: 100%;
         margin-left: -200%; } }
 
 .vision {
@@ -732,7 +734,7 @@ body {
     justify-content: space-between; }
     .value__content__image {
       width: 50%;
-      height: 50rem; }
+      height: 48rem; }
       .value__content__image img {
         width: 100%;
         height: 100%; }
@@ -765,7 +767,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: -4.8rem;
-  padding: 4.8rem 0; }
+  padding: 8rem 0; }
   .leaders .heading {
     margin-bottom: 4rem; }
   .leaders__row {
@@ -788,8 +790,8 @@ body {
         .leaders__row__section__content .heading {
           margin-bottom: 1.6rem;
           align-items: flex-start; }
-          .leaders__row__section__content .heading .heading-3 {
-            width: 48rem; }
+        .leaders__row__section__content__text .paragraph {
+          text-align: justify; }
   @media (min-width: 320px) and (max-width: 576px) {
     .leaders__row {
       margin-bottom: 4rem; }
@@ -798,6 +800,10 @@ body {
         .leaders__row__section__image {
           height: 55rem;
           margin-bottom: 2.4rem; }
+        .leaders__row__section__content .heading {
+          align-items: center; }
+          .leaders__row__section__content .heading .heading-3 {
+            text-align: center; }
         .leaders__row__section__content__text .paragraph {
           text-align: justify; }
         .leaders__row__section > * {
@@ -808,7 +814,7 @@ body {
 .team {
   display: flex;
   flex-direction: column;
-  margin-top: 2.4rem; }
+  padding: 8rem 0 3.2rem 0; }
   .team > * {
     margin-bottom: 6.4rem; }
   .team__row {
@@ -953,6 +959,8 @@ body {
     .behaviour__text .heading {
       align-items: flex-start;
       margin-bottom: 1.6rem; }
+    .behaviour__text .paragraph {
+      text-align: justify; }
     .behaviour__text__lists {
       padding-left: 3.2rem; }
       .behaviour__text__lists__item {
@@ -1023,8 +1031,8 @@ body {
         .contact__content__text .social-media a {
           padding: 0; }
           .contact__content__text .social-media a svg {
-            height: 6.4rem;
-            width: 6.4rem; }
+            height: 5.6rem;
+            width: 5.6rem; }
     .contact__content__form {
       width: 45%;
       display: flex;
@@ -1055,3 +1063,50 @@ body {
 
 .footer-contact {
   margin-top: -9.6vh; }
+
+.donate {
+  display: flex;
+  justify-content: space-between; }
+  .donate .vision {
+    width: 30%; }
+    .donate .vision img {
+      width: 100%; }
+  .donate__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem; }
+    .donate__row__image {
+      width: 45%; }
+      .donate__row__image img {
+        width: 100%; }
+    .donate__row__text {
+      width: 50%; }
+      .donate__row__text .heading {
+        align-items: flex-start; }
+  @media (min-width: 320px) and (max-width: 576px) {
+    .donate {
+      flex-direction: column; }
+      .donate .vision {
+        width: 100%;
+        margin: 0 auto; }
+        .donate .vision__text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+        .donate .vision .paragraph {
+          text-align: center; }
+        .donate .vision .btn {
+          margin: 0 auto;
+          width: 50%;
+          align-self: center; }
+      .donate .vision:nth-of-type(3) {
+        display: none; }
+      .donate__row {
+        flex-direction: column-reverse; }
+        .donate__row > * {
+          width: 100%;
+          margin-bottom: 2.4rem; }
+        .donate__row__text .heading {
+          align-items: center; }
+        .donate__row__text .paragraph {
+          text-align: justify; } }
