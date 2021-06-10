@@ -1070,17 +1070,16 @@ body {
   justify-content: space-between;
   margin-bottom: 4rem; }
   .donate__row__transfer {
-    width: 45%;
+    width: 30%;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-direction: column; }
     .donate__row__transfer .heading {
       align-items: flex-start; }
-    .donate__row__transfer > * {
-      width: 45%; }
     .donate__row__transfer .project .btn {
       width: 100%; }
   .donate__row__text {
-    width: 50%; }
+    width: 60%; }
     .donate__row__text .heading {
       align-items: flex-start; }
     .donate__row__text .paragraph {
