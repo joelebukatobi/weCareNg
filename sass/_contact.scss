@@ -29,12 +29,13 @@
     width: 100%;
     max-width: 192rem;
     margin: 0 auto;
-    padding: 0 32rem;
+    // padding: 0 32rem;
     color: $color-white;
     display: flex;
     justify-content: space-between;
     &__text {
       width: 45%;
+
       &__group {
         margin-bottom: 2.4rem;
         & > * {
@@ -78,7 +79,6 @@
       }
     }
     &__content {
-      padding: 3.2rem;
       flex-direction: column;
       & > * {
         width: 100%;
