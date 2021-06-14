@@ -52,3 +52,40 @@ $('.trusted__carousel').owlCarousel({
     },
   },
 });
+
+let shimawa = document.getElementById('shimawa');
+let isheri = document.getElementById('isheri');
+let epe = document.getElementById('epe');
+let iwoye = document.getElementById('iwoye');
+let lekki = document.getElementById('lekki');
+let mapSrc = document.getElementById('gmap_canvas');
+
+shimawa.onclick = shimawaChangeMap;
+function shimawaChangeMap() {
+  mapSrc.src =
+    "https://maps.google.com/maps?q=Queen's%20Park%20Estate,%20Simawa&t=&z=13&ie=UTF8&iwloc=&output=embed";
+}
+
+isheri.onclick = isheriChangeMap;
+function isheriChangeMap() {
+  mapSrc.src =
+    'https://maps.google.com/maps?q=Isheri%20North%20GRA&t=&z=13&ie=UTF8&iwloc=&output=embed';
+}
+
+epe.onclick = epeChangeMap;
+function epeChangeMap() {
+  mapSrc.src =
+    'https://maps.google.com/maps?q=Epe&t=&z=13&ie=UTF8&iwloc=&output=embed';
+}
+
+iwoye.onclick = iwoyeChangeMap;
+function iwoyeChangeMap() {
+  mapSrc.src =
+    'https://maps.google.com/maps?q=Ago-Iwoye&t=&z=13&ie=UTF8&iwloc=&output=embed';
+}
+
+// lekki.onclick = lekkiChangeMap;
+// function lekkiChangeMap() {
+//   mapSrc.src =
+//     "https://maps.google.com/maps?q=Queen's%20Park%20Estate,%20Simawa&t=&z=13&ie=UTF8&iwloc=&output=embed";
+// }
