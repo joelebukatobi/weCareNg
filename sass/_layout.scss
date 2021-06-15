@@ -331,6 +331,20 @@
           height: 4rem;
         }
       }
+
+      &__contact {
+        &__item {
+          list-style: none;
+          // display: flex;
+          // align-items: center;
+          margin-bottom: 1.6rem;
+          & svg {
+            margin-right: 0.8rem;
+            height: 1.6rem;
+            width: 1.6rem;
+          }
+        }
+      }
     }
   }
   &__bottom {

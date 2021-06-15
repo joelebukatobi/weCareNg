@@ -434,6 +434,13 @@ body {
       .footer__top__column:nth-of-type(4) svg {
         width: 4rem;
         height: 4rem; }
+      .footer__top__column__contact__item {
+        list-style: none;
+        margin-bottom: 1.6rem; }
+        .footer__top__column__contact__item svg {
+          margin-right: 0.8rem;
+          height: 1.6rem;
+          width: 1.6rem; }
   .footer__bottom {
     margin-top: 4rem;
     color: #ffffff; }
