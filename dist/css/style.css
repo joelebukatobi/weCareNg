@@ -1081,12 +1081,12 @@ body {
         margin-bottom: 2.4rem; }
         .contact__content__text__group > * {
           margin-bottom: 0.8rem; }
-      .contact__content__text .social-media {
+      .contact__content__text .icon-logo {
         display: flex;
         padding: 0; }
-        .contact__content__text .social-media a {
+        .contact__content__text .icon-logo a {
           padding: 0; }
-          .contact__content__text .social-media a svg {
+          .contact__content__text .icon-logo a svg {
             height: 5.6rem;
             width: 5.6rem; }
     .contact__content__form {
@@ -1111,7 +1111,7 @@ body {
         width: 100%; }
       .contact__content__text__group {
         display: none; }
-      .contact__content__text .social-media {
+      .contact__content__text .icon-logo {
         display: none; }
       .contact__content__form {
         margin-top: 2.4rem; } }
